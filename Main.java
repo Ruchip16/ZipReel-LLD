@@ -380,7 +380,7 @@ public class Main {
             System.out.println(service.getCacheStats());
 
             service.clearCache(CacheLevel.L1);
-            System.out.println("\nAfter clearing L1 cache, searching again for Sci-Fi movies:");
+            System.out.println("\nAfter clearing L1 cache, searching for Sci-Fi movies:");
             results = service.search("1", SearchType.GENRE, "Sci-Fi");
             results.forEach(System.out::println);
 
